@@ -39,6 +39,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
 
 
 $app->get('/', App\View\TestView::asView("Hello World"));
+$app->get('/hello/{name}', App\View\HelloView::asView("Hello"));
 
 $app->run();
 
