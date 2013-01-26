@@ -1,5 +1,5 @@
 {
-    "hash": "c4f925371e7dc5a47f8dc2ff4eff8895",
+    "hash": "124bbe512e2097b17b7dd76613dd0981",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -454,12 +454,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hoffmann/Silex-View",
-                "reference": "87b7095d833325614ea9d9ef68bbad1e778e8ce1"
+                "reference": "0cbd1591cd2f3598583fc7f69eeea7c0d0ffe3f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/hoffmann/Silex-View/archive/87b7095d833325614ea9d9ef68bbad1e778e8ce1.zip",
-                "reference": "87b7095d833325614ea9d9ef68bbad1e778e8ce1",
+                "url": "https://github.com/hoffmann/Silex-View/archive/0cbd1591cd2f3598583fc7f69eeea7c0d0ffe3f3.zip",
+                "reference": "0cbd1591cd2f3598583fc7f69eeea7c0d0ffe3f3",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +472,7 @@
             "suggest": {
                 "twig/twig": ">=1.2.0"
             },
-            "time": "2013-01-26 18:45:18",
+            "time": "2013-01-26 19:17:23",
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -492,6 +492,61 @@
             ],
             "description": "Generic Views for Silex",
             "homepage": "https://github.com/hoffmann/Silex-View",
+            "keywords": [
+                "silex"
+            ]
+        },
+        {
+            "name": "igorw/config-service-provider",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igorw/ConfigServiceProvider",
+                "reference": "82b53f20a28a534b4e126ae0ed72fabb03a7e27a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/igorw/ConfigServiceProvider/archive/82b53f20a28a534b4e126ae0ed72fabb03a7e27a.zip",
+                "reference": "82b53f20a28a534b4e126ae0ed72fabb03a7e27a",
+                "shasum": ""
+            },
+            "require": {
+                "silex/silex": "1.0.*"
+            },
+            "require-dev": {
+                "symfony/yaml": "2.1.*"
+            },
+            "suggest": {
+                "symfony/yaml": "2.1.*"
+            },
+            "time": "2013-01-03 21:02:50",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Igorw\\Silex": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/igorw/ConfigServiceProvider/contributors"
+                }
+            ],
+            "description": "A JSON/Yaml-based config ServiceProvider for Silex.",
             "keywords": [
                 "silex"
             ]

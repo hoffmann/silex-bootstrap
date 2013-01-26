@@ -8,6 +8,8 @@ composer.json
 -------------
 Requirements for silex, twig, doctrine and monolog
 
+* https://github.com/igorw/ConfigServiceProvider
+
 public/.htaccess
 ----------------
 Rewrite Rule and set APP_ENV

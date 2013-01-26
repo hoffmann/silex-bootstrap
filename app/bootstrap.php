@@ -10,6 +10,8 @@ use Monolog\Logger;
 
 $app = new Silex\Application();
 $app["debug"] = getenv('APP_ENV') === 'dev';
+$env = getenv('APP_ENV') ?: 'prod';
+$app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__."/../config/config.json"));
 
 
 if ($app["debug"]){

@@ -5,6 +5,8 @@
         "doctrine/dbal": "2.4.*",
         "twig/twig": ">=1.2.0,<2.0-dev",
         "monolog/monolog": "*",
+        "psr/log": ">=1.0,<2.0",
+        "igorw/config-service-provider": "*",
         "hoffmann/silex-view": "dev-master"
     },
     "autoload": {
