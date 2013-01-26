@@ -8,7 +8,8 @@ use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
 
 
 $app = new Silex\Application();
-$app["debug"] = True;
+$app["debug"] = getenv('APP_ENV') === 'dev';
+
 
 if ($app["debug"]){
     ini_set('display_errors', 1);
