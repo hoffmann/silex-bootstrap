@@ -1,0 +1,16 @@
+{
+    "minimum-stability": "dev",
+    "require": {
+        "silex/silex": "1.0.*",
+        "doctrine/dbal": "2.4.*",
+        "twig/twig": ">=1.2.0,<2.0-dev",
+        "monolog/monolog": "*",
+        "hoffmann/silex-view": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "App": "app/"
+        }
+    }
+
+}
