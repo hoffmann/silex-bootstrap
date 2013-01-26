@@ -5,6 +5,7 @@ use Silex\Application;
 
 use Symfony\Component\HttpKernel\Debug\ErrorHandler;
 use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
+use Monolog\Logger;
 
 
 $app = new Silex\Application();
@@ -22,6 +23,11 @@ if ($app["debug"]){
     ini_set('display_errors', 0);
 }
 
+$app->register(new Silex\Provider\MonologServiceProvider(), array(
+    'monolog.logfile' => __DIR__.'/../log/development.log',
+    'monolog.level' => $app["debug"] ? Logger::DEBUG : Logger::WARNING,
+    'monolog.name' =>'myapp'
+));
 
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     'twig.path' => __DIR__.'/../templates',

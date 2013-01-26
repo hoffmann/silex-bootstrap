@@ -8,7 +8,8 @@ class HelloView extends \SilexView\TemplateView
         $this->name = $name;
     }
 
-    function getContextData($request, $app){
+    function getContextData($request, $app)
+    {
         return array("greet" => $this->name, "name" => $request->get("name"));
     }
 }

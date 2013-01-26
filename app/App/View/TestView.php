@@ -8,7 +8,9 @@ class TestView extends \SilexView\TemplateView
         $this->name = $name;
     }
 
-    function getContextData($request, $app){
+    function getContextData($request, $app)
+    {
+        $app['monolog']->debug('hello world');
         return array("name" => $this->name);
     }
 }
