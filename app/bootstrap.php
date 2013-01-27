@@ -5,12 +5,13 @@ use Silex\Application;
 
 use Symfony\Component\HttpKernel\Debug\ErrorHandler;
 use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
+use Silex\Provider\FormServiceProvider;
 use Monolog\Logger;
 
 
 $app = new Silex\Application();
 $app["debug"] = getenv('APP_ENV') === 'dev';
-$env = getenv('APP_ENV') ?: 'prod';
+#$env = getenv('APP_ENV') ?: 'prod';
 $app->register(new Igorw\Silex\ConfigServiceProvider(__DIR__."/../config/config.json"));
 
 
@@ -45,6 +46,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     )
 ));
 
+$app->register(new FormServiceProvider());
 
 $app->get('/', App\View\TestView::asView("Hello World"));
 $app->get('/hello/{name}', App\View\HelloView::asView("Hello"));

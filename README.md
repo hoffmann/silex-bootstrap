@@ -10,6 +10,10 @@ Requirements for silex, twig, doctrine and monolog
 
 * https://github.com/igorw/ConfigServiceProvider
 
+* [FormServiceProvider][form]
+
+[form]: http://silex.sensiolabs.org/doc/providers/form.html
+
 public/.htaccess
 ----------------
 Rewrite Rule and set APP_ENV
