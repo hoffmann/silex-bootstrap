@@ -5,7 +5,6 @@ use Silex\Application;
 
 use Symfony\Component\HttpKernel\Debug\ErrorHandler;
 use Symfony\Component\HttpKernel\Debug\ExceptionHandler;
-use Silex\Provider\FormServiceProvider;
 use Monolog\Logger;
 
 
@@ -46,7 +45,10 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     )
 ));
 
-$app->register(new FormServiceProvider());
+$app->register(new Silex\Provider\FormServiceProvider());
+$app->register(new Silex\Provider\TranslationServiceProvider(), array(
+    'locale_fallback' => 'en',
+));
 
 $app->get('/', App\View\TestView::asView("Hello World"));
 $app->get('/hello/{name}', App\View\HelloView::asView("Hello"));

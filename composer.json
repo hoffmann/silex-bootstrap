@@ -7,6 +7,7 @@
         "monolog/monolog": "*",
         "symfony/form": "2.1.*",
         "symfony/twig-bridge": "2.1.*",
+        "symfony/translation": "2.1.*",
         "psr/log": ">=1.0,<2.0",
         "igorw/config-service-provider": "*",
         "hoffmann/silex-view": "dev-master"
